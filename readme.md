@@ -1,12 +1,18 @@
 # Simple generate deeplink
 
+##
+```
+composer require toancong/deeplink
+```
 ## Example
 
 ```
 #.env file
-#DEEPLINKING_PROVIDER=branch.io
-#DEEPLINKING_SECRET=key_test_peGildZNO7f9pfIji7bV5nhetE12345
+DEEPLINKING_PROVIDER=branch.io
+DEEPLINKING_SECRET=key_test_peGildZNO7f9pfIji7bV5nhetE12345
+```
 
+```
 $sourceLink = '/user?'.http_build_query($params);
 $data = [
     'branch_key' => env('DEEPLINKING_SECRET'),
